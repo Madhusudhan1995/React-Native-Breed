@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {View,Text,StyleSheet} from 'react-native';
 
-export default class SubjectClassActivity extends Component {
+export default class Helth extends Component {
  render(){
    return(
      <View>

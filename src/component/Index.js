@@ -2,9 +2,9 @@ import * as React from 'react';
 import { View,Text,StyleSheet, Dimensions,Image } from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 
-import HomeClassActivity from '../constants/HomeClassActivity';
-import SubjectClassActivity from '../constants/SubjectClassActivity';
-import CategoryClassActivity from '../constants/CategoryClassActivity';
+import Registation from '../constants/Registation';
+import Helth from '../constants/Helth';
+import Breed from '../constants/Breed';
  
 export default class TabViewExample extends React.Component {
   state = {
@@ -28,10 +28,10 @@ export default class TabViewExample extends React.Component {
     />;
 
   _renderScene = SceneMap({
-    first: HomeClassActivity ,
-    second: SubjectClassActivity ,
-    thord: CategoryClassActivity,
-    forth: SubjectClassActivity,
+    first: Registation ,
+    second: Helth,
+    thord: Breed,
+    forth: Helth,
   });
   _renderIcon = ({ route } ) => {
     return <Image source={route.icon} />;
@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
    flex:1,
    },
    text:{
+     marginLeft:10,
     backgroundColor:'white',
    },
    scene: {
